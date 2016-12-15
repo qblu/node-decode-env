@@ -1,0 +1,22 @@
+{
+  "name": "decode-env",
+  "version": "1.0.0",
+  "description": "Decode environment variables by name",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qblu/node-decode-env.git"
+  },
+  "keywords": [
+    "env",
+    "decode"
+  ],
+  "author": "Joe Lafiosca <joe@lafiosca.com>",
+  "license": "MIT"
+}
