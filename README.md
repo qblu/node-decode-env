@@ -16,7 +16,29 @@ For the base64 use case, simply require the module and run the `decodeEnv` funct
 
 ```
 const decodeEnv = require('decode-env');
+
 decodeEnv();
 ```
 
-For more complex uses, including supporting other decoders, see the [examples](examples/).
+Or even more simply:
+
+```
+require('decode-env')();
+```
+
+For more complex use cases, you may specify an array of decoder mappings and an options object:
+
+```
+const decodeEnv = require('decode-env');
+const mapping = require('decode-env/decoders/rot13').mapping;
+
+decodeEnv([mapping], { overwrite: true });
+```
+
+The library includes decoder mappings for base64, rot-13, and uri-encoding, using the append strings BASE64, ROT13, and URLSAFE, respectively. You can easily write and employ custom decoder mappings as well.
+
+For more details, see the [examples](examples/).
+
+## License
+
+This library is provided under the [MIT License](LICENSE).
