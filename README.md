@@ -37,7 +37,9 @@ decodeEnv([mapping], { overwrite: true });
 
 The library includes decoder mappings for base64, rot-13, and uri-encoding, using the append strings BASE64, ROT13, and URLSAFE, respectively. You can easily write and employ custom decoder mappings as well.
 
-For more details, see the [examples](examples/).
+Currently the only option supported is `overwrite`, which is a boolean indicating whether or not to overwrite existing environment variables. By default it is false.
+
+For more usage details, see the [examples](examples/).
 
 ## License
 
